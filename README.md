@@ -10,7 +10,7 @@ Checkout the code using 'git checkout https://gist.github.com/DigvijayGooner/f73
 
 Download the data set, https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Unzip the data set into your Working Directory and you should see a folder named UCI HAR Dataset in YOURDIRECTORY
+Unzip the data set into your Working Directory and you should see a folder named UCI HAR Dataset in the Working Directory
 
 Load RStudio
 
