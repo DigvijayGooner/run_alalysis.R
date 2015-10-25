@@ -31,6 +31,6 @@
 # create a dataset grouped by subject and activity after applying standard deviation and average calculations
   library(data.table)
   dataDT <- data.table(data)
-  calculatedData<- dataDT[, lapply(.SD, mean), by=c("subjectId", "activity")]
-  write.table(calculatedData, "calculated_tidy_data.txt")
+  finalData<- dataDT[, lapply(.SD, mean), by=c("subjectId", "activity")]
+  write.table(finalData, "final_tidy_data.txt")
 }
