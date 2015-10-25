@@ -12,7 +12,7 @@
   features <- read.table("UCI HAR Dataset/features.txt", col.names=c("featureId", "featureLabel"))
   activities <- read.table("UCI HAR Dataset/activity_labels.txt", col.names=c("activityId", "activityLabel"))
   activities$activityLabel <- gsub("_", "", as.character(activities$activityLabel))
-  includedFeatures <- grep("-mean\\(\\)|-std\\(\\)", features$featureLabel) #Removing the"()" from the code
+  includedFeatures <- grep("-mean\\(\\)|-std\\(\\)", features$featureLabel) #Removing the"()" from the labels
   
 # merge test and training data and then name them
   subject <- rbind(subject_test, subject_train)
